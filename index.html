@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <title>Painel Ação</title>
+</head>
+
+<body id="particles-js">
+
+    <div class="form">
+
+        <form action="https://api.sheetmonkey.io/form/ih6SspbBr7LZpr24EWi2qd" method="post">
+        
+            <div class="form-header">
+                <div class="title">
+                    <h1>Painel de ação</h1>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div class="input-box">
+                    <label for="name">Nome do Cadastrante</label>
+                    <input id="name" type="text" name="Nome" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="acao">Ação</label>
+                    <input id="acao" type="text" name="ação" placeholder="Digite a ação" required>
+                </div>
+                <div class="input-box">
+                    <label for="responsavel">Responsável</label>
+                    <input id="responsavel" type="text" name="responsavel" placeholder="Digite o responsável" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="endereço">Endereço</label>
+                    <input id="endereço" class="text" type="text" name="endereço" placeholder="Digite o endereço" required>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div class="input-box horario">
+                    <label for="horario">Horário</label>
+                    <input id="horario" type="text" name="horario" placeholder="Digite o horário" required>
+                </div>
+                
+
+                <div class="input-box">
+                    <label for="data">Data</label>
+                    <input id="data" type="text" name="data" placeholder="Digite a Data" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="custo">Custo</label>
+                    <input id="custo" type="text" name="custo" placeholder="Digite o custo" required>
+                </div>
+            </div>
+
+            <div class="continue-button">
+                <button type="submit" id="continue-button">Continuar</button>
+            </div>
+        </form>
+
+    </div>
+
+    <style>
+        .particles-js-canvas-el {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left:0;
+        }
+        </style>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+        <script>
+        //JS Code Here
+        particlesJS("particles-js", {"particles":{"number":{"value":170,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"window","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+        </script>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -40,7 +40,7 @@ document.getElementById('endereço').addEventListener('input', function (e) {
     const value = e.target.value;
 
     // Limitar a 30 caracteres
-    if (value.length > 30) {
+    if (value.length > 60) {
         e.target.value = value.slice(0, 30);
     }
 });

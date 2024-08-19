@@ -15,49 +15,63 @@
     <div class="form">
 
         <form action="https://api.sheetmonkey.io/form/ih6SspbBr7LZpr24EWi2qd" method="post">
-        
+
             <div class="form-header">
                 <div class="title">
-                    <h1>Painel de ação</h1>
+                    <h1>Painel de Ação</h1>
                 </div>
             </div>
 
             <div class="input-group">
+                
                 <div class="input-box">
-                    <label for="name">Nome do Cadastrante</label>
-                    <input id="name" type="text" name="Nome" placeholder="Digite seu nome" required>
+                    <label for="categoria">Categoria</label>
+                    <select id="categoria" name="Categoria" required>
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="Garagem">Garagem</option>
+                        <option value="Lista">Lista</option>
+                        <option value="Coordenação">Coordenação</option>
+                        <option value="Infra">Infra</option>
+                        <option value="Panfletagem">Panfletagem</option>
+                        <option value="Bancas">Bancas</option>
+                        <option value="Visitas">Visitas</option>
+                    </select>
                 </div>
-
                 <div class="input-box">
                     <label for="acao">Ação</label>
-                    <input id="acao" type="text" name="ação" placeholder="Digite a ação" required>
-                </div>
-                <div class="input-box">
-                    <label for="responsavel">Responsável</label>
-                    <input id="responsavel" type="text" name="responsavel" placeholder="Digite o responsável" required>
+                    <input id="acao" type="text" name="Ação" placeholder="Digite a ação" required>
                 </div>
 
                 <div class="input-box">
-                    <label for="endereço">Endereço</label>
-                    <input id="endereço" class="text" type="text" name="endereço" placeholder="Digite o endereço" required>
+                    <label for="justificativa">Justificativa</label>
+                    <input id="justificativa" type="text" name="Justificativa" placeholder="Digite a justificativa" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="responsavel">Responsavel</label>
+                    <input id="responsavel" type="text" name="responsavel" placeholder="Digite o responsavel" required>
                 </div>
             </div>
 
             <div class="input-group">
-                <div class="input-box horario">
-                    <label for="horario">Horário</label>
-                    <input id="horario" type="text" name="horario" placeholder="Digite o horário" required>
+                <div class="input-box">
+                    <label for="local">Local</label>
+                    <input id="local" type="text" name="local" placeholder="Digite o local" required>
                 </div>
-                
 
                 <div class="input-box">
-                    <label for="data">Data</label>
-                    <input id="data" type="text" name="data" placeholder="Digite a Data" required>
+                    <label for="Prazo">Prazo</label>
+                    <input id="Prazo" type="text" name="Prazo" placeholder="Digite o Prazo" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="etapas">Etapas</label>
+                    <input id="etapas" type="text" name="Etapas" placeholder="Digite as etapas" required>
                 </div>
 
                 <div class="input-box">
                     <label for="custo">Custo</label>
-                    <input id="custo" type="text" name="custo" placeholder="Digite o custo" required>
+                    <input id="custo" type="text" name="Custo" placeholder="R$ 0,00" required>
                 </div>
             </div>
 

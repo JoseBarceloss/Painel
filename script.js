@@ -10,7 +10,7 @@ document.getElementById("acao").addEventListener("input", function() {
 // Justificativa VVVVV
 
 document.getElementById("justificativa").addEventListener("input", function() {
-    var maxLength = 30;
+    var maxLength = 60;
     if (this.value.length > maxLength) {
         this.value = this.value.slice(0, maxLength);
     }
@@ -55,7 +55,7 @@ document.getElementById("Prazo").addEventListener("input", function() {
 // Etapas VVVVV 
 
 document.getElementById("etapas").addEventListener("input", function() {
-    var maxLength = 30;
+    var maxLength = 60;
     if (this.value.length > maxLength) {
         this.value = this.value.slice(0, maxLength);
     }

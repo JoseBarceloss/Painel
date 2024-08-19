@@ -52,6 +52,7 @@ h1 {
 
 select {
     background-color: #fff;
+    color: #000;
     margin: 0.6rem 0;
     padding: 0.7rem 1.2rem;
     border: none;
@@ -261,7 +262,7 @@ select option {
         width: 100%;
         margin-top: 0.2rem;
         border: none;
-        background-color: #8aacf1;
+        background-color: #ff0000a4;
         padding: 0.40rem;
         border-radius: 5px;
         cursor: pointer;
@@ -308,7 +309,7 @@ select option {
         width: 100%;
         margin-top: 25px;
         border: none;
-        background-color: #8aacf1;
+        background-color: #ff0000a4;
         padding: 0.40rem;
         border-radius: 5px;
         cursor: pointer;
